@@ -1,0 +1,43 @@
+.idmain{
+  max-width: 2000px !important;
+  position: relative; /* Make the container a positioned ancestor */
+  height: 100%;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+.banners {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.banner {
+  min-height: 100vh;
+  background-color: #7d4f35; 
+  z-index: 20;
+  position: fixed;
+  top: 0;
+}
+
+.banner-1 {
+  left: 0;
+  width: 25%;
+}
+
+.banner-2 {
+  left: 25%;
+  width: 25%;
+}
+
+.banner-3 {
+  left: 50%;
+  width: 25%;
+}
+
+.banner-4 {
+  left: 75%;
+  width: 25%;
+}

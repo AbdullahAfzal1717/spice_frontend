@@ -1,0 +1,67 @@
+.btn {
+  position: relative;
+  display: inline-flex; /* Makes the button adjust width based on content */
+  min-width: 150px; /* Minimum width to ensure button has a reasonable size */
+  height: 45px;
+  background-color: #7d4f35;
+  border-radius: 70px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding-left: 50px; /* Adjust padding for a flexible width */
+  padding-right: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.btn.active {
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.btn span {
+  position: absolute;
+  left: 3px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.active span {
+  left: calc(100% - 45px);
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  transform: translateX(-180px) skewX(30deg);
+  transition: 0.75s ease-in-out;
+}
+
+.btn.active::after {
+  transform: translateX(0) skewX(30deg);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 14px; /* Adjust font size on smaller screens */
+    padding-left: 50px;
+    padding-right: 15px;
+  }
+
+  .btn span {
+    width: 35px;
+    height: 35px;
+  }
+}

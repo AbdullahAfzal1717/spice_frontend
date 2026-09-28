@@ -1,0 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Assyrian&family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("./fonts/PlayfairDisplay-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("./fonts/OpenSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSans-Regular.woff2") format("woff2"),
+    url("./fonts/DMSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Yellowtail";
+  src: url("./fonts/yellowtail-regular-webfont.woff2") format("woff2"),
+    url("./fonts/yellowtail-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter28pt-Regular.woff2") format("woff2"),
+    url("./fonts/Inter28pt-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url("./fonts/CormorantInfant-Regular.woff2") format("woff2"),
+    url("./fonts/CormorantInfant-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("./fonts/JosefinSans-Regular.woff2") format("woff2"),
+    url("./fonts/JosefinSans-Regular.woff") format("woff");
+}
+html {
+  /* scroll-behavior: auto; */
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* height: 100%; */
+  /* overflow: hidden; */
+}
+
+:root {
+  /* background color */
+  --background: #fbfbfb;
+  --colorbg1: #7d4f35;
+  --colorbg2: #f9f8f8;
+  --colorbg3: #865439;
+  --colorbg4: #fbfbfb;
+  --colorbg5: #fbfbfb;
+
+  /* text color */
+
+  --color1: #fbfbfb;
+  --color2: #ffffff;
+  --color3: #262626;
+  --color4: #5c6574;
+  --color5: #865439;
+  --color6: #fbfbfb;
+  --color7: #2b2b2b;
+  --color8: #7d4f35;
+  --color9: #ffffff;
+
+  /* border */
+  --colorbr1: #dedddd;
+
+  /* Site Fonts */
+  --font-assyrian: "Assyrian", sans-serif;
+  --font-underrated-ultra-bol: "Underrated-Ultra-Bol", sans-serif; /* Add the custom font once hosted */
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #161412;
+    --colorbg1: #2a211b;
+    --colorbg2: #241e1a;
+    --colorbg3: #9b6646;
+    --colorbg4: #161412;
+    --colorbg5: #1d1916;
+    --color1: #f7f1ea;
+    --color2: #fffaf4;
+    --color3: #f4ece4;
+    --color4: #c8bbb0;
+    --color5: #d39a6e;
+    --color6: #f7f1ea;
+    --color7: #eee4da;
+    --color8: #d39a6e;
+    --color9: #fffaf4;
+    --colorbr1: #5b4d42;
+  }
+}
+
+html,
+body {
+  /* overflow: hidden; */
+}
+
+body {
+  /* transform: translate3d(0, 0, 0); */
+  /* backface-visibility: hidden; */
+}
+
+.app {
+  /* will-change: transform; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  height: 100%;
+  background-color: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container {
+  max-width: 2000px !important;
+  position: relative; /* Make the container a positioned ancestor */
+  z-index: 5;
+}
+
+.arrows button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: monospace;
+  background-color: #fff;
+  border: none;
+  color: #7d4f35;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  left: 10%;
+  transition: background 0.5s, color 0.5s;
+}
+.arrows button#next {
+  left: unset;
+  right: 10%;
+}
+.arrows button:hover {
+  background-color: #7d4f35;
+  color: #eee;
+  border: 1px solid #eee;
+}
+@media screen and (max-width: 767px) {
+  .arrows button {
+    top: unset;
+    bottom: 20px;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 60px !important;
+  height: 60px !important;
+  padding: 10px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  font-family: monospace;
+  background-color: #fff !important;
+  border: none;
+  color: #7d4f35 !important;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  left: 10%;
+  transition: background 0.5s, color 0.5s;
+  opacity: 0.5;
+}
+
+.swiper-button-prev:hover {
+  background-color: #7d4f35 !important;
+  color: #eee !important;
+  border: 1px solid #eee !important;
+  opacity: 1;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 60px !important;
+  height: 60px !important;
+  padding: 10px !important;
+  border-radius: 50% !important;
+  font-family: monospace;
+  background-color: #fff !important;
+  border: none;
+  color: #7d4f35 !important;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+  left: 10%;
+  transition: background 0.5s, color 0.5s;
+  opacity: 0.5;
+}
+
+.swiper-button-next:hover {
+  background-color: #7d4f35 !important;
+  color: #eee !important;
+  border: 1px solid #eee !important;
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--color3);
+    color-scheme: dark;
+  }
+
+  .arrows button,
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: #241e1a !important;
+    color: #d39a6e !important;
+    border: 1px solid #5b4d42;
+  }
+
+  .arrows button:hover,
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #d39a6e !important;
+    color: #241e1a !important;
+    border-color: #d39a6e !important;
+  }
+
+  .app__navbar,
+  .Header_sidebar {
+    background-color: #1d1916;
+  }
+
+  .btn span {
+    background-color: #f4ece4;
+    color: #2a211b;
+  }
+
+  .carousel {
+    background-color: #211c19;
+    color: #f4ece4;
+  }
+
+  .carousel .list .item .info .title,
+  .carousel .list .item .info .category,
+  .carousel .list .item .info .des,
+  .carousel .list .item .info .price,
+  .Drink_title,
+  .Drink_description {
+    color: #f4ece4;
+  }
+
+  .Drink_line {
+    border-color: #5b4d42;
+  }
+
+  .Card_wrapper {
+    background-color: #2a211b;
+    color: #f4ece4;
+  }
+
+  .Price_container2,
+  .Offer_going {
+    color: #f4ece4;
+  }
+
+  .Offer_going {
+    border-color: #d39a6e;
+  }
+
+  .loader {
+    border-color: #51443a;
+    border-top-color: #d39a6e;
+  }
+
+  input,
+  textarea,
+  select {
+    color: #f4ece4;
+    background-color: #241e1a;
+    border-color: #5b4d42;
+  }
+
+  .Msg_form_wrapper_btn {
+    background-color: #f4ece4;
+    color: #6f472f;
+  }
+
+  .Footer_input,
+  .Footer_input input,
+  .footer-input,
+  .footer-input input {
+    background-color: #241e1a;
+    color: #f4ece4;
+    border-color: #5b4d42;
+  }
+
+  .Footer_input::placeholder,
+  .Footer_input input::placeholder,
+  .footer-input::placeholder,
+  .footer-input input::placeholder {
+    color: #c8bbb0;
+  }
+
+  .carousel .list .item .info .price {
+    color: #d39a6e;
+  }
+
+  .dots li {
+    background-color: #c8bbb066;
+  }
+
+  .dots li.active {
+    background-color: #f4ece4;
+  }
+}

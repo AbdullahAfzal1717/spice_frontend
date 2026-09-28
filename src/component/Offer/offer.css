@@ -1,0 +1,108 @@
+.Offer {
+  width: 100%;
+  min-height: 60vh;
+  height: auto;
+  position: relative;
+  padding: 40px 20px 40px 20px;
+}
+
+.Offer_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Offer_shorttitle {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.07px;
+  letter-spacing: 0.27em;
+  color: var(--color5);
+  width: 58px;
+  height: 22px;
+  border-top: 1.4px solid #865439;
+  border-bottom: 1.4px solid #865439;
+}
+
+.Offer_title {
+  font-family: Cormorant Infant;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 41.63px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.Offer_dis {
+  font-family: Josefin Sans;
+  font-size: 18.6px;
+  font-weight: 400;
+  line-height: 23.53px;
+  text-align: center;
+  width: 60%;
+}
+
+.Offer_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Offer_pizza_img1 {
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  width: 237px;
+  height: 241px;
+}
+
+@media (max-width: 425px) {
+  .Offer {
+    padding: 10px;
+  }
+  .Offer_title {
+    font-size: 25px;
+  }
+
+  .Offer_shorttitle {
+    font-size: 14px;
+    width: auto;
+  }
+  .Offer_dis {
+    font-size: 18px;
+    width: 75%;
+  }
+
+  .Offer_pizza_img1 {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .Offer_title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .Offer_title {
+    font-size: 35px;
+  }
+
+  .Offer {
+    padding: 30px 16px;
+  }
+
+  .Offer_dis {
+    width: min(100%, 560px);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .Offer_cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}

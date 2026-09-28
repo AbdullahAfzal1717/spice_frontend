@@ -1,0 +1,145 @@
+.Drinks {
+  width: 100%;
+  min-height: 65vh;
+  height: auto;
+  position: relative;
+  padding: 40px 20px 80px 20px;
+}
+
+.Drinks_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Drinks_shorttitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.07px;
+  letter-spacing: 0.27em;
+  color: var(--color5);
+  width: 58px;
+  height: 22px;
+  border-top: 1.4px solid #865439;
+  border-bottom: 1.4px solid #865439;
+}
+
+.Drinks_title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.Drinks_dis {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18.6px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  width: 60%;
+}
+
+.Drink_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.Drinks_wrapper_img1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 185px;
+  height: 189px;
+  object-fit: cover;
+}
+
+.Drinks_wrapper_img2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 185px;
+  height: 189px;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 2000px) {
+  .Drinks_title {
+    font-size: 48px;
+  }
+  .Drinks_dis {
+    font-size: 17px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Drinks_title {
+    font-size: 40px;
+  }
+  .Drinks_dis {
+    font-size: 16px;
+    width: 75%;
+  }
+  .Drinks_wrapper_img1,
+  .Drinks_wrapper_img2 {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Drinks_title {
+    font-size: 36px;
+  }
+  .Drinks_dis {
+    font-size: 15px;
+    width: 80%;
+  }
+  .Drinks_wrapper_img1,
+  .Drinks_wrapper_img2 {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Drinks_wrapper_img1,
+  .Drinks_wrapper_img2 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .Drinks {
+    padding: 20px;
+  }
+  .Drinks_shorttitle {
+    font-size: 12px;
+    width: auto;
+  }
+  .Drinks_title {
+    font-size: 24px;
+  }
+  .Drinks_dis {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .Drinks_title {
+    font-size: 20px;
+  }
+  .Drinks_dis {
+    font-size: 12px;
+    width: 100%;
+  }
+}

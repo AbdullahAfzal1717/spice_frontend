@@ -1,0 +1,555 @@
+.Offer_cards_container {
+  /* display: flex; */
+  width: 100%;
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+}
+.Card_container_item_card {
+  padding: 10px;
+  width: 50%;
+  height: 100%;
+}
+.Card_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: calc(50% - 20px);
+  margin: 30px 10px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .Card_container {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .Card_container_item_card {
+    width: 100%;
+  }
+
+  .Card_wrapper {
+    min-height: 320px;
+    padding: 16px 12px 0;
+  }
+}
+
+.Card_wrapper {
+  /* flex: 1; */
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  background: #d7d7d7;
+  padding: 20px 20px 0px 20px;
+  z-index: 1;
+}
+
+.Card_price_container {
+  position: relative;
+}
+
+.Star_image {
+  position: relative;
+  width: 145px;
+}
+
+.Price_container1 {
+  position: absolute;
+  top: 55px;
+  left: 21px;
+  color: white;
+  transform: rotate(-15deg);
+  transform-origin: bottom left;
+}
+.Price_container2 {
+  position: absolute;
+  top: 55px;
+  left: 21px;
+  color: black;
+  transform: rotate(-15deg);
+  transform-origin: bottom left;
+}
+
+.Card_right_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(50% -20px);
+}
+.Card_left_section {
+  position: relative;
+  width: calc(50% -20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondCard {
+  background-color: #7d4f35;
+}
+
+.Card_left_section .sec_Offer_image,
+.fir_Offer_image {
+  max-width: 407px;
+  max-height: 400px;
+  object-fit: fill;
+}
+
+.fir_Pattern_image {
+  position: absolute;
+  z-index: -1;
+  max-width: 250px;
+  left: 58%;
+  bottom: 0px;
+}
+.sec_Pattern_image {
+  position: absolute;
+  z-index: -1;
+  max-width: 250px;
+  left: 58%;
+  top: 0px;
+}
+.Offer_going {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.07px;
+  letter-spacing: 0.27em;
+  color: black;
+  width: 165px;
+  height: 22px;
+  border-top: 1.4px solid #000000;
+  border-bottom: 1.4px solid #000000;
+}
+.second_price {
+  color: #7d4f35;
+}
+.Offer_going_title {
+  font-family: Cormorant Infant;
+  font-size: 37.21px;
+  font-weight: 700;
+  line-height: 28.69px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.Offer_going_des {
+  font-family: Josefin Sans;
+  font-size: 18.6px;
+  font-weight: 400;
+  line-height: 23.53px;
+  text-align: left;
+}
+
+.Only {
+  font-family: Josefin Sans;
+  font-size: 13.95px;
+  font-weight: 500;
+  line-height: 10.76px;
+  text-align: center;
+}
+
+.Amount {
+  font-family: Cormorant Infant;
+  font-size: 55.81px;
+  font-weight: 700;
+  line-height: 43.03px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  background-color: #7d4f35;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #7d4f35;
+  transform: scale(1.1);
+} */
+
+/* .swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: bold;
+} */
+@media (min-width: 280px) and (max-width: 450px) {
+  .Star_image {
+    width: 60px;
+  }
+  .Price_container1,
+  .Price_container2 {
+    top: 22px;
+    left: 5px;
+  }
+  .Offer_going {
+    font-size: 5px;
+    font-weight: 400;
+    line-height: 6.07px;
+    width: 60px;
+    height: 8px;
+    border-top: 1.4px solid #000000;
+    border-bottom: 1.4px solid #000000;
+  }
+  .Offer_going_title {
+    font-size: 18.21px;
+    font-weight: 500;
+    line-height: 8.69px;
+    margin: 6px 0px;
+  }
+  .Offer_going_des {
+    font-family: Josefin Sans;
+    font-size: 6.6px;
+    font-weight: 400;
+    line-height: 5.53px;
+    text-align: left;
+  }
+
+  .Card_left_section .sec_Offer_image,
+  .fir_Offer_image {
+    max-width: 150px;
+    max-height: 125px;
+    object-fit: fill;
+  }
+  .Only {
+    font-size: 5.95px;
+    font-weight: 400;
+    line-height: 5.76px;
+    text-align: center;
+  }
+  .fir_Pattern_image,
+  .sec_Pattern_image {
+    max-width: 100px;
+  }
+  .Amount {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 15.03px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 451px) and (max-width: 569px) {
+  .Star_image {
+    width: 85px;
+  }
+  .Price_container1,
+  .Price_container2 {
+    top: 35px;
+    left: 14px;
+  }
+  .Offer_going {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 10.07px;
+    width: 115px;
+    height: 14px;
+    border-top: 1.4px solid #000000;
+    border-bottom: 1.4px solid #000000;
+  }
+  .Offer_going_title {
+    font-size: 25.21px;
+    font-weight: 700;
+    line-height: 14.69px;
+    margin: 10px 0px;
+  }
+  .Offer_going_des {
+    font-family: Josefin Sans;
+    font-size: 10.6px;
+    font-weight: 400;
+    line-height: 10.53px;
+    text-align: left;
+  }
+
+  .Card_left_section .sec_Offer_image,
+  .fir_Offer_image {
+    max-width: 247px;
+    max-height: 195px;
+    object-fit: fill;
+  }
+  .Only {
+    font-size: 7.95px;
+    font-weight: 400;
+    line-height: 6.76px;
+    text-align: center;
+  }
+  .fir_Pattern_image,
+  .sec_Pattern_image {
+    max-width: 130px;
+  }
+  .Amount {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 18.03px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 570px) and (max-width: 669px) {
+  .Star_image {
+    width: 115px;
+  }
+  .Price_container1,
+  .Price_container2 {
+    top: 45px;
+    left: 18px;
+  }
+  .Offer_going {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13.07px;
+    width: 165px;
+    height: 18px;
+    border-top: 2.4px solid #000000;
+    border-bottom: 2.4px solid #000000;
+  }
+  .Offer_going_title {
+    font-size: 30.21px;
+    font-weight: 800;
+    line-height: 17.69px;
+    margin: 10px 0px;
+  }
+  .Offer_going_des {
+    font-family: Josefin Sans;
+    font-size: 15.6px;
+    font-weight: 400;
+    line-height: 16.53px;
+    text-align: left;
+  }
+
+  .Card_left_section .sec_Offer_image,
+  .fir_Offer_image {
+    max-width: 317px;
+    max-height: 280px;
+    object-fit: fill;
+  }
+  .Only {
+    font-size: 10.95px;
+    font-weight: 400;
+    line-height: 8.76px;
+    text-align: center;
+  }
+  .fir_Pattern_image,
+  .sec_Pattern_image {
+    max-width: 180px;
+  }
+  .Amount {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 30.03px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 670px) and (max-width: 889px) {
+  .Card_right_section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 1099px) {
+  .Star_image {
+    width: 85px;
+  }
+  .Price_container1,
+  .Price_container2 {
+    top: 35px;
+    left: 15px;
+  }
+  .Offer_going {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 10.07px;
+    width: 115px;
+    height: 14px;
+    border-top: 1.4px solid #000000;
+    border-bottom: 1.4px solid #000000;
+  }
+  .Offer_going_title {
+    font-size: 25.21px;
+    font-weight: 700;
+    line-height: 14.69px;
+    margin: 10px 0px;
+  }
+  .Offer_going_des {
+    font-family: Josefin Sans;
+    font-size: 10.6px;
+    font-weight: 400;
+    line-height: 10.53px;
+    text-align: left;
+  }
+
+  .Card_left_section .sec_Offer_image,
+  .fir_Offer_image {
+    max-width: 267px;
+    max-height: 217px;
+    object-fit: fill;
+  }
+  .Only {
+    font-size: 7.95px;
+    font-weight: 400;
+    line-height: 6.76px;
+    text-align: center;
+  }
+  .fir_Pattern_image,
+  .sec_Pattern_image {
+    max-width: 140px;
+  }
+  .Amount {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 18.03px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1309px) {
+  .Star_image {
+    width: 115px;
+  }
+  .Price_container1,
+  .Price_container2 {
+    top: 45px;
+    left: 20px;
+  }
+  .Offer_going {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13.07px;
+    width: 165px;
+    height: 18px;
+    border-top: 2.4px solid #000000;
+    border-bottom: 2.4px solid #000000;
+  }
+  .Offer_going_title {
+    font-size: 30.21px;
+    font-weight: 800;
+    line-height: 17.69px;
+    margin: 10px 0px;
+  }
+  .Offer_going_des {
+    font-family: Josefin Sans;
+    font-size: 15.6px;
+    font-weight: 400;
+    line-height: 16.53px;
+    text-align: left;
+  }
+
+  .Card_left_section .sec_Offer_image,
+  .fir_Offer_image {
+    max-width: 317px;
+    max-height: 280px;
+    object-fit: fill;
+  }
+  .Only {
+    font-size: 10.95px;
+    font-weight: 400;
+    line-height: 8.76px;
+    text-align: center;
+  }
+  .fir_Pattern_image,
+  .sec_Pattern_image {
+    max-width: 180px;
+  }
+  .Amount {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 30.03px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .Amount {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 49.03px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .Star_image {
+    width: 180px;
+  }
+  .Price_container1,
+  .Price_container2 {
+    top: 65px;
+    left: 25px;
+  }
+  .Offer_going {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22.07px;
+    width: 265px;
+    height: 32px;
+    border-top: 3.4px solid #000000;
+    border-bottom: 3.4px solid #000000;
+  }
+  .Offer_going_title {
+    font-size: 55.21px;
+    font-weight: 900;
+    line-height: 35.69px;
+    margin: 16px 0px;
+  }
+  .Offer_going_des {
+    font-family: Josefin Sans;
+    font-size: 24.6px;
+    font-weight: 400;
+    line-height: 28.53px;
+    text-align: left;
+  }
+  .fir_Offer_image {
+    margin-right: 10px;
+  }
+
+  .Card_left_section .sec_Offer_image,
+  .fir_Offer_image {
+    max-width: 487px;
+    max-height: 440px;
+    object-fit: fill;
+  }
+  .Only {
+    font-size: 20.95px;
+    font-weight: 500;
+    line-height: 20.76px;
+    text-align: center;
+  }
+  .fir_Pattern_image,
+  .sec_Pattern_image {
+    max-width: 3000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Card_container {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .Card_container_item_card {
+    width: 100%;
+  }
+
+  .Card_wrapper {
+    min-height: 320px;
+    padding: 16px 12px 0;
+  }
+}

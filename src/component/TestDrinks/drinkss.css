@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.carousel_Drink {
+  width: 100%;
+  background-color: #555;
+  height: 720px;
+  color: #eee;
+  margin-top: -50px;
+  position: relative;
+}
+.carousel_Drink .list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.carousel_Drink .list .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.carousel_Drink .list .item::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  content: var(--title);
+  font-size: 15em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee4;
+  z-index: -1;
+}
+.image-container {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel_Drink .list .item .content {
+  width: 1140px;
+  max-width: 90%;
+  margin: auto;
+  height: 100%;
+  /* padding-top: 50px; */
+  box-sizing: border-box;
+  display: flex;
+  gap: 50px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.carousel_Drink .list .item .info .title {
+  font-family: Cormorant Infant;
+  font-size: 6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.carousel_Drink .list .item .info .category {
+  opacity: 0.7;
+  color: var(--color3);
+  font-family: Josefin Sans;
+}
+.carousel_Drink .list .item .info .des {
+  margin: 1em 0;
+  font-family: Josefin Sans;
+  color: var(--color3);
+}
+.carousel_Drink .list .item .info .price {
+  display: inline-flex;
+  gap: 20px;
+  text-decoration: none;
+  color: var(--color3);
+  font: Josefin Sans;
+  font-weight: 500;
+  font-size: 25px;
+}
+.carousel_Drink .list .item {
+  z-index: 1;
+}
+.carousel_Drink .list .item.active {
+  z-index: 2;
+}
+
+.dots li {
+  width: 15px;
+  height: 15px;
+  background-color: #eee5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots li.active {
+  background-color: #eee;
+}
+.dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 30px;
+  z-index: 2;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background 0.5s;
+}
+.carousel_Drink {
+  overflow: hidden;
+}
+.carousel_Drink .Drink_image {
+  height: 425px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.carousel_Drink .image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+/* responsive */
+@media screen and (max-width: 767px) {
+  .image-container {
+    max-width: 300px;
+  }
+  .carousel_Drink {
+    height: 100vh;
+  }
+  .carousel_Drink .list .item .info {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .carousel_Drink .list .item .info .title {
+    font-size: 2em;
+  }
+  .carousel_Drink .list .item .info .des {
+    font-size: 0.8em;
+    text-align: justify;
+  }
+  .carousel_Drink .list .item .info .price {
+    font-size: 0.8em;
+    text-align: justify;
+    color: var(--color1);
+    font-size: 18px;
+  }
+
+  .carousel_Drink .list .item .content {
+    max-width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .carousel_Drink .Drink_image {
+    width: min(72vw, 260px);
+    height: min(48vh, 300px);
+  }
+
+  .carousel_Drink .list .item .info {
+    position: static;
+    padding: 0 20px 60px;
+  }
+
+  .carousel_Drink .list .item .info .des {
+    margin: 0.6em 0;
+    text-align: center;
+  }
+
+  /* .carousel_Drink .list .item .content {
+    justify-content: center;
+    align-items: center;
+  } */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel_Drink .list .item .info .title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .carousel_Drink .list .item .info .title {
+    font-size: 70px;
+  }
+}
+
+/* effect */
+@keyframes transformAnimation {
+  from {
+    transform: translateX(var(--transform-from));
+  }
+  to {
+    transform: translateX(var(--transform-to));
+  }
+}
+
+.carousel_Drink.effect .item .info .title,
+.carousel_Drink.effect .item .info .category,
+.carousel_Drink.effect .item .info .des,
+.carousel_Drink.effect .item .info a {
+  animation: transformAnimation 1s ease-in-out 1 forwards;
+}
+.carousel_Drink.effect .item .info .category {
+  animation-delay: 0.1s;
+}
+.carousel_Drink.effect .item .info .des {
+  animation-delay: 0.2s;
+}
+.carousel_Drink.effect .item .info a {
+  animation-delay: 0.3s;
+}
+.carousel_Drink.effect .item.active {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  animation: animationClipPath 0.9s ease-in-out 1 forwards;
+}
+@keyframes animationClipPath {
+  to {
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+  }
+}
+
+.carousel_Drink.effect {
+  --transform: 300px;
+}
+.carousel_Drink.effect .item.active {
+  --transform-from: calc(var(--transform) * -1);
+  --transform-to: 0px;
+}
+.carousel_Drink.effect .item {
+  --transform-from: 0;
+  --transform-to: var(--transform);
+}
