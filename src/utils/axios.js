@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const axiosInstance = axios.create({
-  baseURL: 'https://spiceback.vercel.app/', // Node.js API endpoint
-  // baseURL: 'http://localhost:7890/',
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'https://spiceback.vercel.app/';
 
+const axiosInstance = axios.create({
+  baseURL: apiBaseUrl,
 });
 
 export default axiosInstance;
