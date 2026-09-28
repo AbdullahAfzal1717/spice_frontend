@@ -206,7 +206,7 @@
   }
 
   .right-wrapper-sec4 {
-    top:24%;
+    top: 24%;
     left: -15%;
   }
   .wrapper3 {
@@ -268,7 +268,7 @@
   }
 
   .right-wrapper-sec4 {
-    top:24%;
+    top: 24%;
     left: -6%;
   }
   .wrapper3 {
@@ -291,7 +291,7 @@
   }
 
   .right-wrapper-sec4 {
-    top:27%;
+    top: 27%;
     left: -3%;
   }
   .wrapper3 {
@@ -315,7 +315,7 @@
   }
 
   .right-wrapper-sec4 {
-    top:27%;
+    top: 27%;
     left: -1%;
   }
   .wrapper3 {
@@ -339,7 +339,7 @@
   }
 
   .right-wrapper-sec4 {
-    top:27%;
+    top: 27%;
     left: 1%;
   }
   .wrapper3 {
@@ -363,15 +363,13 @@
   }
 
   .right-wrapper-sec4 {
-    top:27%;
+    top: 27%;
     left: 3%;
   }
   .wrapper3 {
     top: 50%;
   }
 }
-
-
 
 /* @media (width >=320px) and (width <=600px) {
   .Nutration {

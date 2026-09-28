@@ -96,6 +96,9 @@ const Footer = (props) => {
               </span>
             </div>
             <p className="Footer_row2_mail" data-aos="fade-right">
+              FAX: {props?.setting?.fax}
+            </p>
+            <p className="Footer_row2_mail" data-aos="fade-right">
               {props?.setting?.email}
             </p>
           </div>

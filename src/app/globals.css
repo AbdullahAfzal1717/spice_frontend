@@ -5,42 +5,50 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
     url("./fonts/PlayfairDisplay-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/OpenSans-Regular.woff2") format("woff2"),
     url("./fonts/OpenSans-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("./fonts/DMSans-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/DMSans-Regular.woff2") format("woff2"),
     url("./fonts/DMSans-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Yellowtail";
-  src: url("./fonts/yellowtail-regular-webfont.woff2") format("woff2"),
+  src:
+    url("./fonts/yellowtail-regular-webfont.woff2") format("woff2"),
     url("./fonts/yellowtail-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/roboto-regular-webfont.woff2") format("woff2"),
+  src:
+    url("./fonts/roboto-regular-webfont.woff2") format("woff2"),
     url("./fonts/roboto-regular-webfont.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter28pt-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/Inter28pt-Regular.woff2") format("woff2"),
     url("./fonts/Inter28pt-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Cormorant Infant";
-  src: url("./fonts/CormorantInfant-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/CormorantInfant-Regular.woff2") format("woff2"),
     url("./fonts/CormorantInfant-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Josefin Sans";
-  src: url("./fonts/JosefinSans-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/JosefinSans-Regular.woff2") format("woff2"),
     url("./fonts/JosefinSans-Regular.woff") format("woff");
 }
 html {
@@ -78,7 +86,8 @@ html {
 
   /* Site Fonts */
   --font-assyrian: "Assyrian", sans-serif;
-  --font-underrated-ultra-bol: "Underrated-Ultra-Bol", sans-serif; /* Add the custom font once hosted */
+  --font-underrated-ultra-bol:
+    "Underrated-Ultra-Bol", sans-serif; /* Add the custom font once hosted */
   --font-montserrat: "Montserrat", sans-serif;
 }
 
@@ -154,7 +163,9 @@ body {
   font-size: large;
   cursor: pointer;
   left: 10%;
-  transition: background 0.5s, color 0.5s;
+  transition:
+    background 0.5s,
+    color 0.5s;
 }
 .arrows button#next {
   left: unset;
@@ -191,7 +202,9 @@ body {
   font-size: large;
   cursor: pointer;
   left: 10%;
-  transition: background 0.5s, color 0.5s;
+  transition:
+    background 0.5s,
+    color 0.5s;
   opacity: 0.5;
 }
 
@@ -218,7 +231,9 @@ body {
   font-size: large;
   cursor: pointer;
   left: 10%;
-  transition: background 0.5s, color 0.5s;
+  transition:
+    background 0.5s,
+    color 0.5s;
   opacity: 0.5;
 }
 

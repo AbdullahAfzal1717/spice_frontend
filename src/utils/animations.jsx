@@ -1,4 +1,3 @@
-
 import gsap from "gsap";
 export const AnimatePageIn = () => {
   const bannerZero = document.getElementById("banner-0");
@@ -22,13 +21,12 @@ export const AnimatePageIn = () => {
   };
 
   const tl = gsap.timeline({ onComplete: finish });
-  tl.set(banners, { yPercent: 0 })
-    .to(banners, {
-      yPercent: 100,
-      stagger: 0.5,
-      duration: 1.5,
-      ease: "power1.inOut",
-    });
+  tl.set(banners, { yPercent: 0 }).to(banners, {
+    yPercent: 100,
+    stagger: 0.5,
+    duration: 1.5,
+    ease: "power1.inOut",
+  });
 
   return () => {
     tl.kill();
@@ -59,7 +57,7 @@ export const AnimatePageOut = () => {
         bannerTwo.remove();
         bannerThree.remove();
         bannerFour.remove();
-      }
+      },
     });
   }
 };

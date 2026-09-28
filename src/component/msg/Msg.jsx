@@ -7,9 +7,6 @@ import Imagemsg1 from "@/images/msg/2.svg";
 import Imagemsg2 from "@/images/msg/3.svg";
 import Imagemsg3 from "@/images/msg/4.svg";
 import Imagemsg from "@/images/msg/msg.svg";
-import Imageemail from "@/images/msg/email.svg";
-import Imagefax from "@/images/msg/fax.svg";
-import Imagephone from "@/images/msg/phone.svg";
 import axiosInstance from "@/utils/axios";
 
 const Msg = (props) => {
@@ -79,7 +76,7 @@ const Msg = (props) => {
       } catch (error) {
         console.error(
           "Error submitting form:",
-          error.response?.data || error.message
+          error.response?.data || error.message,
         );
         alert("Failed to send the message. Please try again.");
       }
@@ -184,49 +181,6 @@ const Msg = (props) => {
                 <button type="submit" className="Msg_form_wrapper_btn">
                   Envoyer
                 </button>
-              </div>
-              <div className="Msg_iconsForm_wrapper">
-                <div className="Msg_iconsForm_icon" data-aos="fade-up">
-                  <Image
-                    src={Imagephone}
-                    alt="pattern"
-                    className="Msg_iconsForm_icon_img"
-                  />
-                  <div className="Msg_iconsForm_icon_div">
-                    <div className="Msg_iconsForm_icon_div_title">Nombre</div>
-                    <div className="Msg_iconsForm_icon_div_value">
-                      {props?.setting?.phone}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="Msg_iconsForm_icon" data-aos="fade-up">
-                  <Image
-                    src={Imagefax}
-                    alt="pattern"
-                    className="Msg_iconsForm_icon_img"
-                  />
-                  <div className="Msg_iconsForm_icon_div">
-                    <div className="Msg_iconsForm_icon_div_title">FAX</div>
-                    <div className="Msg_iconsForm_icon_div_value">
-                      {props?.setting?.fax}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="Msg_iconsForm_icon" data-aos="fade-up">
-                  <Image
-                    src={Imageemail}
-                    alt="pattern"
-                    className="Msg_iconsForm_icon_img"
-                  />
-                  <div className="Msg_iconsForm_icon_div">
-                    <div className="Msg_iconsForm_icon_div_title">E-MAIL</div>
-                    <div className="Msg_iconsForm_icon_div_value">
-                      {props?.setting?.email}
-                    </div>
-                  </div>
-                </div>
               </div>
             </form>
           </div>

@@ -1,4 +1,4 @@
-.idmain{
+.idmain {
   max-width: 2000px !important;
   position: relative; /* Make the container a positioned ancestor */
   height: 100%;
@@ -16,7 +16,7 @@
 
 .banner {
   min-height: 100vh;
-  background-color: #7d4f35; 
+  background-color: #7d4f35;
   z-index: 20;
   position: fixed;
   top: 0;
